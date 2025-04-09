@@ -1,0 +1,30 @@
+# BASIC: 4o
+
+python -m src.agent.evaluation.agent_eval \
+    --log-level INFO \
+    --timeout 300 \
+    --llm-provider openai \
+    --llm-endpoint gpt-4o-2024-11-20 \
+    --dataset MattBoraske/reddit-AITA-submissions-and-comments-multiclass \
+    --sampling complete \
+    --run-eval \
+    --eval-type BASIC
+    --phoenix-project BASIC-1
+
+
+# RAG: 4o text-embedding-3-large
+
+python -m src.agent.evaluation.agent_eval \
+    --log-level INFO \
+    --timeout 300 \
+    --llm-provider openai \
+    --llm-endpoint gpt-4o-2024-11-20 \
+    --embedding-provider openai \
+    --embedding-endpoint text-embedding-3-large \
+    --pinecone-index aita-text-embedding-3-large \
+    --docs-to-retrieve 5 \
+    --dataset MattBoraske/reddit-AITA-submissions-and-comments-multiclass \
+    --sampling complete \
+    --run-eval \
+    --eval-type RAG \
+    --phoenix-project RAG-1

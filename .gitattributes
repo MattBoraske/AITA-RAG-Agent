@@ -1,0 +1,5 @@
+*.json filter=lfs diff=lfs merge=lfs -text
+agent-results/basic_agent_responses.json filter=lfs diff=lfs merge=lfs -text
+agent-results/rag_agent_responses.json filter=lfs diff=lfs merge=lfs -text
+agent-results/basic_agent_responses_v1.json filter=lfs diff=lfs merge=lfs -text
+agent-results/rag_agent_responses_v1.json filter=lfs diff=lfs merge=lfs -text

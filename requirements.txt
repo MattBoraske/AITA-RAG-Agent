@@ -1,0 +1,21 @@
+## NEED TO FIX THIS LATER
+
+llama-index
+llama-index-llms-groq
+llama-index-llms-openai
+llama-index-postprocessor-cohere-rerank
+llama-index-embeddings-openai
+llama-index-vector-stores-pinecone
+llama_deploy
+openinference-instrumentation-llama-index>=3.0.0
+opentelemetry-proto>=1.12.0
+opentelemetry-exporter-otlp
+opentelemetry-sdk
+datasets
+evaluate
+scikit-learn
+seaborn
+matplotlib
+rouge-score
+unbabel-comet
+torch
